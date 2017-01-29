@@ -7,13 +7,17 @@ import org.telegram.telegrambots.exceptions.TelegramApiRequestException;
 import org.telegram.telegrambots.logging.BotLogger;
 
 import java.io.InvalidObjectException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyAmazingBot extends TelegramLongPollingBot {
 
 
   private static final String LOGTAG = "LOG";
 
+  @Override
   public void onUpdateReceived(Update update) {
+    System.out.println("сообщение дошло");
     try {
       Message message = update.getMessage();
       if (message != null && message.hasText()) {
@@ -39,11 +43,11 @@ public class MyAmazingBot extends TelegramLongPollingBot {
   }
 
   public String getBotUsername() {
-    return "notezBot";
+    return "noteSaveBot";
   }
 
   public String getBotToken() {
-    return "247406665:AAErQI8j4bae2hnpFlH9AVNZGyftuOGSBw0";
+    return "247406665:AAHeIeuXuNSsCJ9vz9Km6S7NpvsDOIb5O70";
   }
 
   public void clearWebhook() throws TelegramApiRequestException {
