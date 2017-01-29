@@ -39,7 +39,7 @@ public class MyAmazingBot extends TelegramLongPollingBot {
   }
 
   public String getBotUsername() {
-    return "@noteSaveBot";
+    return "notezBot";
   }
 
   public String getBotToken() {
