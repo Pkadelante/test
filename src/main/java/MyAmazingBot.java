@@ -13,11 +13,10 @@ import java.util.List;
 public class MyAmazingBot extends TelegramLongPollingBot {
 
 
-  private static final String LOGTAG = "LOG";
+  private static final String LOGTAG = "MyAmazingBot";
 
   @Override
   public void onUpdateReceived(Update update) {
-    System.out.println("сообщение дошло");
     try {
       Message message = update.getMessage();
       if (message != null && message.hasText()) {
