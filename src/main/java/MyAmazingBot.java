@@ -26,7 +26,7 @@ public class MyAmazingBot extends TelegramLongPollingBot {
 
   private void handleIncomingMessage(Message message) {
     SendMessage sendMessage = new SendMessage();
-    sendMessage.setText("Универсальный ответ, на все.");
+    sendMessage.setText("РЇ СѓРјРµСЋ РѕС‚РІРµС‡Р°С‚СЊ!!!");
     sendMessage.enableMarkdown(true);
     sendMessage.setChatId(message.getChatId());
     sendMessage.setReplyToMessageId(message.getMessageId());
@@ -39,7 +39,7 @@ public class MyAmazingBot extends TelegramLongPollingBot {
   }
 
   public String getBotUsername() {
-    return "noteSaveBot";
+    return "@noteSaveBot";
   }
 
   public String getBotToken() {
